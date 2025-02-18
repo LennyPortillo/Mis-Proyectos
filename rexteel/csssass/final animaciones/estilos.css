@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
+.borde-gris1 {
+  border-bottom: 1px solid #ccc;
+}
+
+.borde-gris2 {
+  border-bottom: 1px solid #aeaeae;
+}
+
+.borde-gris3 {
+  border-bottom: 1px solid #a4a4a4;
+}
+
+nav {
+  width: 100%;
+  border-bottom: 1px solid #4d4d4d;
+  height: 60px;
+  font-family: "Open Sans Condensed", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  margin-top: 1em;
+}
+
+nav img {
+  width: 3%;
+}
+
+nav a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: bold;
+}
+
+nav a:first-of-type {
+  margin-left: 15px;
+}
+
+@font-face {
+  src: url(../fuentes/CreteRound.ttf);
+  font-family: miFuente;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 100%;
+  margin: 0;
+}
+
+p {
+  color: #4D4D4D;
+}
+
+button {
+  padding: 0.2em;
+  border: 2px solid black;
+  width: 130px;
+  height: 50px;
+  font-size: 1em;
+  text-transform: uppercase;
+  background: transparent;
+  font-family: miFuente;
+  margin-top: 3em;
+  border-color: black;
+  color: black;
+  -webkit-transition: width 2s 1s linear, background-color 2s ease-out;
+  transition: width 2s 1s linear, background-color 2s ease-out;
+}
+
+button {
+  padding: 0.2em;
+  border: 2px solid black;
+  width: 130px;
+  height: 50px;
+  font-size: 1em;
+  text-transform: uppercase;
+  background: transparent;
+  font-family: miFuente;
+  margin-top: 3em;
+  border-color: black;
+  color: black;
+}
+
+header img {
+  width: 30%;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+section, header {
+  width: 80%;
+  padding: 2em;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section img {
+  width: 7%;
+}
+
+article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#compra h3 {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#compra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #000;
+  color: white;
+  width: 100%;
+  font-family: miFuente;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  height: 200px;
+}
+
+#compra button {
+  color: white;
+  border-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.rotacion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s 4s ease-in-out;
+  transition: -webkit-transform 1s 4s ease-in-out;
+  transition: transform 1s 4s ease-in-out;
+  transition: transform 1s 4s ease-in-out, -webkit-transform 1s 4s ease-in-out;
+}
+
+#compra:hover .rotacion {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.frente, .fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fondo {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer ul {
+  list-style: none;
+}
+
+header button:hover {
+  width: 300px;
+  background-color: black;
+  color: white;
+}
+
+#capa {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#capa video {
+  max-width: 100%;
+  height: auto;
+}
+
+#capa button, #capa ul {
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  list-style: none;
+}
+
+article {
+  height: 200px;
+  padding: 2px;
+}
+/*# sourceMappingURL=estilos.css.map */
