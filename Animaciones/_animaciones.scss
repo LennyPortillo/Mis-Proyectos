@@ -1,0 +1,69 @@
+.contenedor {
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+    position: relative;
+    perspective: 400px;
+    }
+    
+    #cubo {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transform: translateZ(-150px);
+        animation-name: girar;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-play-state: paused;
+    }
+
+    #cubo div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: 2px solid gray;
+    }
+    #cubo .atras{
+        background: hsla(0,100%,50%, 0.5);
+        transform: rotateX(0deg) translateZ(-75px);
+    }
+    
+    #cubo .izquierda{
+        background: hsla(260,100%,50%, 0.5);
+        transform: rotateY(90deg) translateZ(-75px);
+    }
+
+    #cubo .abajo {
+        background: hsla(150, 100%,50%,0.5);
+        transform: rotateX(90deg) translateZ(-75px);
+    }
+
+    #cubo .adelante{
+        background: hsla(300,100%, 50%, 0.5);
+        transform: rotateX(0deg) translateZ(75px);
+    }
+
+    #cubo .derecha{
+        background: hsla(100,100%, 50%, 0.5);
+        transform: rotateY(90deg) translateZ(75px);
+    }
+
+    #cubo .arriba{
+        background: hsla(50,100%, 50%, 0.5);
+        transform: rotateX(90deg) translateZ(75px);
+    }
+
+    @keyframes girar{
+        0%{
+            transform: translateZ(-150px) rotateY(0deg);
+        }
+        100%{
+            transform: translateZ(-150px) rotateY(360deg);
+        }
+    }
+
+
+
+#personalizado {@include encolumnado(column,center,center);}

@@ -1,0 +1,122 @@
+
+$color1 :  #4D4D4D;
+$color2: black;
+$tipografiaPrincipal: miFuente;
+
+@mixin encolumnado($direccion, $horizontal, $vertical){
+  display: flex; flex-direction: $direccion; align-items: $vertical; justify-content: $horizontal;
+  
+  }
+
+  $arreglo-colores:(
+    gris1: #ccc,                       
+    gris2: #aeaeae,
+    gris3: #a4a4a4
+  );
+  @each $color, $valor in $arreglo-colores {
+    .borde-#{$color} {
+     border-bottom: 1px solid $valor;
+    }
+  }
+
+
+
+
+
+@import 'menu';
+@import 'animaciones';
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
+
+@font-face {
+  src: url(../fuentes/CreteRound.ttf);
+  font-family: $tipografiaPrincipal;
+}
+
+
+*{ box-sizing: border-box;}
+
+body {
+
+  font-family: 'Open Sans Condensed', sans-serif;
+
+  font-size: 100%;
+  margin: 0;
+}
+
+
+p { color: $color1;   }
+button { padding: 0.2em; border:2px solid black; width: 130px; height: 50px; font-size:1em; text-transform: uppercase; background:transparent; font-family: miFuente; margin-top: 3em; border-color: black; color: black;  transition: width 2s 1s linear, background-color 2s ease-out;}
+
+button { padding: 0.2em; border:2px solid $color2; width: 130px; height: 50px; font-size:1em; text-transform: uppercase; background:transparent; font-family: $tipografiaPrincipal; margin-top: 3em; border-color: $color2; color: black;  }
+
+
+
+header img {width: 30%;}
+header h1 { font-size: 3em;}
+
+section,  header { width: 80%;  padding: 2em; margin:auto; @include encolumnado(row,space-between ,center ); }
+section img { width: 7%;}
+article div { @include encolumnado(row,flex-start ,center); }
+
+#compra h3 { font-size: 2em; font-weight: normal; margin:0; text-transform: uppercase;    }
+
+
+#compra {
+  @include encolumnado(column,flex-start ,center ); background-color: #000; 
+  color: white; width: 100%; font-family: $tipografiaPrincipal;
+  perspective: 1000px;
+  height: 200px;   }
+  
+
+  
+#compra button { color: white; border-color: white; margin: 0; padding: 0;}
+
+
+  .rotacion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+ transform-style: preserve-3d;
+ transition: transform 1s 4s ease-in-out;
+}
+  #compra:hover .rotacion {
+  transform: rotateY(180deg);  }
+
+.frente, .fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  @include encolumnado(row,center,center )
+ 
+}
+
+.fondo{
+   transform: rotateY(180deg);
+  background-color: black;
+  @include encolumnado(row,center,center )
+}
+
+
+
+
+footer { width: 100%; display: flex; justify-content: space-around; }
+footer ul { list-style: none; }
+
+header button:hover { width: 300px;background-color: $color2; color: white;}
+
+
+#capa { width: 100%; height: 100%; position: fixed; top:0; left: 0; background-color: rgba(0,0,0,0.8); display: none; flex-direction: column; justify-content: center; align-items: center; }
+
+#capa video { max-width: 100%; height: auto; }
+#capa button, #capa ul { border: 1px solid white; cursor: pointer; background-color:$color2; 
+  color: white; padding: 10px; list-style:none;}
+
+
+  article { height: 200px; padding: 2px;}
+
+
+

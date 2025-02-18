@@ -1,0 +1,396 @@
+body {
+	background-image: url(Imagenes/fondo.jpg);
+	font-family: Montserrat, sans-serif;
+	
+}	
+#contenedor {
+ width: 960px;
+ height: 700px;
+ margin-left:auto;
+ margin-right:auto;
+  
+}
+header{
+   width: 960px;
+   height: 160px;
+   background-color:#000;
+   margin-top:20px;
+   margin-bottom:20px;   
+   border:double 2px #053782;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-box-shadow: 2px 13px 34px #053782;
+-webkit-box-shadow: 2px 13px 34px #053782;
+box-shadow: 2px 13px 50px #053782;
+}
+
+
+#marca {
+	width:700px;
+	height:160px;
+	float:left;
+	background-color:#000;
+}
+
+#menu3{
+	width:260px;
+	height:160px;
+	background-color:#000;
+	float:right;
+	margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+
+.navegacion{
+	width:960px;
+	margin-top:165px;
+	margin-bottom:20px;
+	background-color:#000;
+border:groove 3px  #053782;
+-moz-border-radius: 56px;
+-webkit-border-radius: 56px;
+border-radius: 56px;
+}
+
+.navegacion ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+
+}
+
+.menu li{
+	position:relative;
+	display:inline-block;
+
+
+	
+}
+
+.menu li a{
+	display: block;
+	padding:15px 20px;
+	color:#fff;
+	font-family:Sans-serif, Arial;
+
+}
+
+.menu li a:hover{
+	background-color:#248735;
+	border:dashed 3px #053782;
+    -moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+}
+
+.submenu{
+	position:absolute;
+	background-color:#000;
+	width:120%;
+	display:none;
+    border:groove 3px  #053782;
+-moz-border-radius: 24px;
+-webkit-border-radius: 24px;
+border-radius: 24x;
+}
+.submenu li a{
+	display:block;
+	padding:15px;
+	color:#fff;
+	font-family: Sans-serif, Arial;
+	text-decoration:none;
+
+}
+.menu li:hover .submenu{
+	display:block;
+	
+}
+
+
+
+#contenido{
+	width:640px;
+	height:500px;
+	margin-bottom:20px;
+	margin-top:40px;
+	float:left;
+	background-color:#000;
+	color:#fff;
+	background-image: url(Imagenes/fondo4.jpeg);
+	background-size:640px 410px;
+	border:double 2px #053782;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+}
+
+h1{
+	text-align:center;
+	text-decoration:underline overline;
+	font-size:large;
+}
+
+p{
+	text-indent:10px;
+}
+
+
+
+#columnas {
+	margin-top:40px;
+	width: 302px;
+	height: 502px;
+	background-color:#ccc;
+	float:right;
+    border:double 2px #053782;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+} 
+
+#foto {
+	width: 150px;
+	height: 150px;
+	background-color:#db6f16;
+	float:left;
+
+} 
+
+
+#menu2{
+	width: 150px;
+	height: 150px;
+	background-image: url(Imagenes/pythonlogo.jpg);
+	background-size: 150px 150px;	
+	float:right;
+}
+#texto{
+	width: 302px;
+	height: 352px;
+	background-color:#fff;
+	float:right;
+	color:#fff;
+	background-image: url(Imagenes/minimalista.png);
+	background-size:300px 350px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+footer {
+	width: 960px;
+	height: auto;
+	background:#000;
+    float:left;
+	clear: left;
+	padding-left: 13px;
+	border:double 2px #053782;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+}
+#footer1 p {
+	font-family: Indie Flower, cursive;
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold; 
+}
+#footer1 p a {
+	color: #FFFFFF; 
+}
+@media handheld, screen and (min-width:600px) and (max-width:1023px){
+
+body {
+	width:100%;
+
+	
+}	
+#contenedor {
+ width: 600px;
+ height: auto;
+  
+}
+header{
+   width: 580px;
+   height: 160px;
+   margin-top:20px;
+   margin-bottom:20px; 
+}
+
+
+#marca {
+	width:400px;
+	height:160px;
+	float:left;
+	background-color:#000;
+}
+
+#menu3{
+	width:180px;
+	height:160px;
+	background-color:#000;
+	float:right;
+	margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+
+.navegacion{
+	width:571px;
+	margin-top:164px;
+	margin-bottom:20px;
+}
+
+#contenido{
+    width:580px;
+	height:auto;
+	margin-bottom:20px;
+	margin-top:40px;
+	float:left;
+	
+}
+
+#columnas {
+	margin-top:5px;
+	width: 302px;
+	height: auto;
+	background-color:#ccc;
+	float:left;
+
+} 
+
+#texto{
+	width: 302px;
+	height: auto;
+	float:right;
+
+}
+
+footer {
+	width: 570px;
+	height: auto;
+	margin-top:5px;
+  
+
+}
+
+
+}
+
+@media screen and (max-width:599px){
+	
+body {
+	width:100%;
+	
+}	
+#contenedor {
+  width: 100%;
+ height: auto;
+  
+}
+header{
+   width: 80%;
+   height:200px;
+   background-color:#000;
+   margin-top:20px;
+   margin-bottom:20px;  
+}
+
+
+#marca {
+	width:100%;
+	height:100px;
+	float:left;
+	background-color:#000;
+}
+
+#menu3{
+	width:100%;
+	height:100px;
+	background-color:#000;
+	float:right;
+}
+
+
+.navegacion{
+	width:100%;
+	margin-top:205px;
+	margin-bottom:20px;
+}
+
+
+.menu li{
+	position:relative;
+	display:table;
+
+	
+}
+
+.menu li a{
+    display: inline-block;
+
+}
+
+
+.submenu li a{
+	display:inline-block;
+
+}
+.menu li:hover .submenu{
+	display:inline-block;
+	
+}
+
+
+
+#contenido{
+	width:80%;
+	height:auto;
+	margin-bottom:20px;
+	margin-top:140px;
+}
+
+
+#columnas {
+	margin-top:40px;
+	width: 302px;
+	height: auto;
+	float:left;
+ 
+} 
+
+#foto {
+	width: 150px;
+	height: 150px;
+	background-color:#db6f16;
+	float:left;
+
+} 
+
+
+#menu2{
+	width: 150px;
+	height: 150px;
+	background-image: url(Imagenes/pythonlogo.jpg);
+	background-size: 150px 150px;	
+	float:right;
+}
+#texto{
+	width: 302px;
+	height: auto;
+	background-color:#fff;
+	
+}
+
+footer {
+	width: 78%;
+	height: auto;
+    float:left;
+	margin-top:5px;
+	
+}
+
+}

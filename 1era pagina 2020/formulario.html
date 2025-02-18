@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+      <head>
+	        <title>Formulario De Contacto</title>
+			<meta charset="utf-8"> 
+			<meta name="description" content=" Bienvenido a Coide-it. Nuestra pagina es tu nueva enciclopedia de informacion donde podras encontrar informacion sobre el lenguaje, sobre el desarrolador, actualizaciones y demas en base a los lenguajes de programacion web mas utilizados hasta el dia de la fecha, cabe mencionar que esta lista se actualiza diariamiente para mantenerte al tanto de las ultimas novedades de cada uno de los lenguajes mencionados "/>
+			<meta name="keywords" content="Python, Java, PHP, C, C++, C#, lenguajes de programacion, programacion, desarrolladores, devs, programming "/>
+		    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+			<link href="estilos2.css" rel="stylesheet">
+			
+			<link rel="icon" type="image/ico" href="Imagenes/favicon5.ico">
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+           <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<script type="text/javascript" src="jquery.js"></script> 
+		</head>
+		<body dir="ltr" lang="es"> 
+		
+		    <section id="contenedor">
+			   
+               <header> 
+			          <div id="marca2">
+					     <img id="marca2" id="marca3" title="Banner Codeit" alt="Banner Codeit" src="Imagenes/bannercoding3.jpeg">
+					  </div>					    
+					  <div id="menu2">
+					     <img id="menu2" title="Nuestro Logo Code-it" alt="Logo Code-it" src="Imagenes/codeit.gif">
+					  </div>
+					  <nav class="navegacion">
+						<ul class="menu">
+						  <li> <a href="index.html">Inicio </a>
+											  
+							</li>
+							<li> <a href="construccion.html"> Presentacion completa </a>				  
+							</li>
+							<li> <a>Acciones Destacadas </a>
+
+							  <ul class="submenu">
+								  <li> <a href="iguazu.html">GC83</a></li>
+								  <li> <a href="islasmalvinas.html">GC82 </a></li>
+								  <li> <a href="poltroneri.html">Poltronieri </a></li>
+							 
+							  </ul>
+						   
+						   </li>
+						   
+							
+															
+							</li>
+							 
+						   
+						</ul>
+				 </nav>
+			   </header>
+			   <section>
+			     <div id="java">
+				 <script></script>
+				 </div>
+				 </section>
+			   <section id="contenido"> 
+			     <div id="Intro">
+			   <h1> <strong>  Code-it </strong> </h1> 
+               
+<form name="formulario" method="post" action="mailto:lennythomasxtillo@gmail.com" enctype="text/plain">
+ <!-- Nombre de usuario. Campo obligatorio, entre 5-40 carácteres -->
+<label> Nombre: </label>
+<input type="text" name="nombre" placeholder="Ingrese su nombre" minlength="2"
+maxlength="40" >
+&nbsp;
+ <!-- Contraseña. Campo obligatorio, mínimo 11 carácteres -->
+ <label>Apellido: </label>
+<input type="text" name="apellido" placeholder="Ingrese Su Apellido" minlength="2">
+<br>
+<br>
+<label>Indique su sexo: </label>
+<br>
+<input type="radio" name="sexo" id="hombre" value="Hombre">Hombre
+<br>
+<input type="radio" name="sexo" id="mujer" value="Mujer">Mujer
+<br>
+<input type="radio" name="sexo" id="aleatorio" value="Aleatorio">Prefiero No Responder
+
+
+<br>
+<br>
+ <label>¿Por que nos contacta?: </label>
+ <br>
+<br>
+
+ <textarea name="comentarios" rows="auto" cols="auto"> </textarea> 
+
+
+
+
+<br>
+<br>
+<input type="checkbox" name="terminos" id="terminos"> Terminos Y Condiciones
+<br>
+<br>
+<input type="submit"  id="btn"  value="Enviar información">
+
+</form>
+
+<script>
+	(function(){
+    
+    var formulario = document.getElementsByName('formulario')[0],
+        elementos= formulario.elements,
+        elem = $("#btn");
+
+    var validarNombre = function(e){
+        if (formulario.nombre.value == 0) {
+
+           $(document).ready(function() {
+                    alert ("Complete El Campo Nombre ");});
+
+            e.preventDefault();
+        }
+
+    };  
+ 
+    var validarApellido = function(e){
+        if (formulario.apellido.value == 0) {
+            $(document).ready(function() {
+                    alert ("Completa El Campo Apellido"); });
+            e.preventDefault();
+        }
+
+    };    
+
+     var validarRadio = function(e){
+        if (formulario.sexo[0].checked == true ||  formulario.sexo[1].checked == true ||
+        	formulario.sexo[2].checked == true){}else {
+                 $(document).ready(function() {
+                    alert ("Selecciona Un Sexo"); });
+            e.preventDefault();
+        }
+
+    };    
+
+     var validarComentarios = function(e){
+        if (formulario.comentarios.value == 0) {
+            $(document).ready(function() {
+               alert ("Agrega Un Breve Comentario"); });
+            e.preventDefault();
+        }
+
+    };
+
+    var validarCheckbox = function(e){
+        if (formulario.terminos.checked == false) {
+            $(document).ready(function() {
+               alert ("Acepte Los Terminos Y Condiciones");}); 
+            e.preventDefault();
+        }
+
+    };
+
+
+    var validar= function(e){
+    	validarNombre(e);
+    	validarApellido(e);
+    	validarRadio(e);
+    	validarComentarios(e);
+    	validarCheckbox(e);
+
+
+    };    
+
+    formulario.addEventListener("submit",validar);
+        
+
+	}())
+	
+
+
+</script>
+<br>
+           <button onclick="window.location.href='index.html'">Ir Al Inicio</button> 
+
+ 
+
+			   </div>
+			   
+			   </section>
+			    <aside> 
+			   <section id="columnas">
+			    <div id="foto">
+				  <draggable ="true"> <img id="foto" title="Codificar es divertido" alt="Gif Codificar es divertido" src="Imagenes/codefun.gif"> </draggable> 
+				</div>
+						
+				<div id="texto">
+				<img id="texto" title="Codigo" alt="Codigo" src="Imagenes/ejemplo2.jpg">
+				</div>
+				 
+				</section>
+				
+				
+				 </aside> 
+				  
+			   <footer> 
+			      <div id="footer1">
+
+    <p>| <a href="https://www.instagram.com/lennyportillo/" target="new">Aviso Legal</a> | <a href="https://www.instagram.com/lennyportillo/" target="new">Sitemap</a> |<a href="novedades.html">Actualizaciones De la Pagina </a>|<a href="construccion.html">Nosotros </a></li></p>
+    <p>© 2020 » LennyPortillo » CODE-IT » Diseño elaborado por <a href="https://www.instagram.com/lennyportillo/" target="new">Lenny T. Portillo</a></p> <input type="url" name="location" list="urls">
+ 
+<datalist id="urls">
+ <option label="PHP"value="https://lennyportillo.000webhostapp.com/php.html">
+ <option label="Java" value="https://lennyportillo.000webhostapp.com/java.html">
+ <option label="Python" value="https://lennyportillo.000webhostapp.com/python.html">
+ <option label="Video Java"value="https://lennyportillo.000webhostapp.com/videojava.html">
+<option label="Video  Python"value="https://lennyportillo.000webhostapp.com/videopython.html">
+ <option label="Video PHP" value="https://lennyportillo.000webhostapp.com/videophp.html">
+</datalist>
+
+      </div>
+    </footer>
+			</section>
+		</body>
+</html>		

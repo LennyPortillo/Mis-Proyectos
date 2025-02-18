@@ -1,0 +1,307 @@
+body {
+	background-image: url(Imagenes/fondoazul2.jpg);
+	font-family: Montserrat, sans-serif;
+
+	
+}	
+#contenedor {
+ width: 960px;
+ height: 700px;
+ margin-left:auto;
+ margin-right:auto;
+}
+header{
+   width: 960px;
+   height: 156px;
+   background-color:#000;
+   margin-top:20px;
+   margin-bottom:20px;   
+   border:double 2px #14e0e0;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-box-shadow: 2px 13px 34px #14e0e0;
+-webkit-box-shadow: 2px 13px 34px #14e0e0;
+box-shadow: 2px 13px 50px #14e0e0;
+}
+
+
+#marca {
+	width:755px;
+	height:156px;
+	float:left;
+	background-color:#000;
+}
+
+
+#menu2{
+	width:205px;
+	height:156px;
+	background-color:#000;
+	float:right;
+	margin:0;
+    padding:0;
+    list-style-type: none;
+	
+}
+
+.navegacion{
+	width:960px;
+	margin-top:160px;
+	margin-bottom:20px;
+	background-color:#000;
+	border:groove 3px  #14e0e0;
+-moz-border-radius: 56px;
+-webkit-border-radius: 56px;
+border-radius: 56px;
+}
+
+.navegacion ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	
+}
+
+.menu li{
+	position:relative;
+	display:inline-block;
+
+	
+}
+
+.menu li a{
+	display: block;
+	padding:15px 20px;
+	color:#fff;
+	font-family:Sans-serif, Arial;
+
+}
+
+.menu li a:hover{
+	background-color:#0373a3;
+	border:dashed 3px #14e0e0;
+-moz-border-radius: 24px;
+-webkit-border-radius: 24px;
+border-radius: 24px;
+}
+
+.submenu{
+	position:absolute;
+	background-color:#000;
+	width:100%;
+	display:none;
+	border:groove 3px  #14e0e0;
+-moz-border-radius: 24px;
+-webkit-border-radius: 24px;
+border-radius: 24x;
+}
+.submenu li a{
+	display:block;
+	
+	padding:15px;
+	color:#fff;
+	font-family: Sans-serif, Arial;
+	text-decoration:none;
+	
+}
+.menu li:hover .submenu{
+	display:block;
+	
+	background-color:#000;
+
+	
+
+}
+
+
+
+
+iframe{
+	width:960px;
+	height:500px;
+	margin-top:40px;
+	border:double 2px #14e0e0;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+box-shadow: 2px 13px 50px #14e0e0;
+}
+
+h1{
+	text-align:center;
+	text-decoration:underline overline;
+	font-size:large;
+}
+
+h2{
+	text-decoration:underline;
+	font-size:large;
+}
+p{
+	text-indent:10px;
+}
+
+
+
+footer {
+	width: 960px;
+	height: auto;
+	background:#000;
+    float:left;
+	clear: left;
+	padding-left: 13px;
+	border:double 2px #14e0e0;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+}
+#footer1 p {
+	font-family: Indie Flower, cursive;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold; 
+}
+#footer1 p a {
+	color: #fff; 
+}
+
+@media handheld, screen and (min-width:600px) and (max-width:1023px){
+	
+body {
+	width:100%;
+
+	
+}	
+#contenedor {
+ width: 600px;
+ height: auto;
+}
+header{
+  width: 580px;
+   height: 160px;
+   margin-top:20px;
+   margin-bottom:20px; 
+}
+
+
+#marca {
+	width:400px;
+	height:160px;
+	float:left;
+	background-color:#000;
+}
+
+
+#menu2{
+	width:180px;
+	height:160px;
+	background-color:#000;
+	float:right;
+	margin:0;
+    padding:0;
+    list-style-type: none;
+	
+}
+
+.navegacion{
+	width:571px;
+	margin-top:164px;
+	margin-bottom:20px;
+}
+
+iframe{
+	width:580px;
+	height:400px;
+	margin-bottom:0px;
+    margin-top:40px;
+	float:left;
+	
+}
+
+footer {
+	width: 570px;
+	height: auto;
+	margin-top:5px;
+}
+}
+
+@media screen and (max-width:599px){
+body {	
+   width:100%;
+
+	
+}	
+#contenedor {
+ width: 100%;
+ height: auto;
+}
+header{
+   width: 80%;
+   height:200px;
+   background-color:#000;
+   margin-top:20px;
+   margin-bottom:20px;  
+}
+
+
+#marca {
+	width:100%;
+	height:100px;
+	float:left;
+	background-color:#000;
+}
+
+
+#menu2{
+	width:100%;
+	height:100px;
+	background-color:#000;
+	float:right;
+	
+}
+
+.navegacion{
+	width:100%;
+	margin-top:205px;
+	margin-bottom:20px;
+}
+
+.menu li{
+	position:relative;
+	display:table;
+
+	
+}
+
+.menu li a{
+    display: inline-block;
+
+}
+
+
+.submenu li a{
+	display:inline-block;
+
+}
+.menu li:hover .submenu{
+	display:inline-block;
+	
+}
+
+
+iframe{
+	width:80%;
+	height:50%;
+	margin-bottom:20px;
+	margin-top:140px;
+}
+
+footer {
+	width: 78%;
+	height: auto;
+    float:left;
+	margin-top:5px;
+}
+
+}	
